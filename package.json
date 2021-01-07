@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-date-pick": "^1.4.1",
+    "vue-masked-input": "^0.5.2",
+    "vue-tabs-component": "^1.5.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",

@@ -1,0 +1,271 @@
+/**
+    General Styling
+**/
+
+li {
+  list-style: none;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+input {
+  outline: none;
+}
+
+
+/*
+  Component Specific Styling
+*/
+
+.filter-tabs .filter-tabs-title {
+  margin-top: 48px;
+  font-weight: 600;
+  font-size: 34px;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.filter-tabs .tabs-component-tabs {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  min-width: 540px;
+  height: 160px;
+  margin: 34px 0 35px;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.filter-tabs .tabs-component-tab-a {
+  display: block;
+  height: 106px;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.filter-tabs .tabs-component-tab {
+  width: 250px;
+  padding: 14px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.filter-tabs .tabs-component-tab:hover,
+.filter-tabs .tabs-component-tab.is-active {
+  border: 2px solid #f7d145;
+  border-radius: 4px;
+}
+
+.filter-icon {
+  display: block;
+  margin: 20px auto;
+  background-size: contain;
+}
+
+.filter-icon-random {
+  width: 75px;
+  height: 63px;
+  background-image: url("../assets/img/cubes.svg");
+}
+
+.filter-icon-number {
+  width: 74px;
+  height: 53px;
+  background-image: url("../assets/img/by-number.svg");
+}
+
+.filter-icon-several-numbers {
+  width: 76px;
+  height: 56px;
+  background-image: url("../assets/img/numbers.svg");
+}
+
+.filter-icon-by-date {
+  width: 60px;
+  height: 60px;
+  background-image: url("../assets/img/by-date.svg");
+}
+
+.filter-icon-by-mask {
+  width: 79px;
+  height: 41px;
+  background-image: url("../assets/img/mask.svg");
+}
+
+.filter-tabs .tabs-component-panels {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.filter-tabs .tabs-component-panels p {
+  padding: 0 10px;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 27px;
+}
+
+.filter-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.filter-fields > div {
+  display: flex;
+  align-items: center;
+}
+
+.filter-fields > div.app-select {
+  display: block;
+}
+
+.filter-fields > div.vdpComponent {
+  display: inline-block;
+}
+
+.filter-fields input[type="text"] {
+  margin-left: 25px;
+}
+
+.btn-main {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 16px;
+  text-transform: uppercase;
+  background: #f7d145;
+  border: 0;
+  border-radius: 22px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-main span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.btn-main .button-preloader {
+  left: 135%;
+  transform: translateY(-50%);
+  transition: left 0.3s;
+}
+
+.btn-main.loading span {
+  left: -100%;
+  opacity: 0;
+}
+
+.btn-main.loading .button-preloader {
+  left: 0;
+}
+
+.filter-tabs .tabs-component-panels input {
+  max-width: 150px;
+  padding: 9px 13px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 23px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.filter-tabs .tabs-component-panels .vdp-datepicker input {
+  width: 150px;
+  max-width: none;
+}
+
+@media (max-width: 767px) {
+  .filter-tabs .tabs-component-panels p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .btn-main {
+    padding: 9px 22px;
+    font-size: 15px;
+  }
+
+  .filter-fields {
+    flex-direction: column;
+    margin-top: 22px;
+  }
+
+  .filter-tabs .filter-tabs-title {
+    margin-top: 30px;
+    font-size: 23px;
+  }
+
+  .filter-tabs .tabs-component-tabs {
+    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+    height: 150px;
+    margin-top: 20px;
+    overflow-x: scroll;
+    -webkit-overflow-scrol: touch;
+  }
+
+  .filter-tabs .tabs-component-tab {
+    min-width: 150px;
+    height: 100%;
+    padding: 0;
+  }
+
+  .filter-tabs .tabs-component-tab-a {
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .filter-icon-random {
+    width: 50px;
+    height: 42px;
+  }
+
+  .filter-icon-number {
+    width: 49px;
+    height: 37px;
+  }
+
+  .filter-icon-several-numbers {
+    width: 50px;
+    height: 38px;
+  }
+
+  .filter-icon-by-date {
+    width: 41px;
+    height: 41px;
+  }
+
+  .filter-icon-by-mask {
+    width: 52px;
+    height: 30px;
+  }
+
+  .filter-tabs .tabs-component-panels {
+    margin-bottom: 25px;
+  }
+
+  .btn-main.ml30 {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}

@@ -1,24 +1,7 @@
-# nomer-tabs
 
-## Project setup
-```
-npm install
-```
+# dependancies
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+npm install vue-tabs-component --save
+npm install vue-masked-input --save
+npm install vue-date-pick
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
