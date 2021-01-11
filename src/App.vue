@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <filter-tabs></filter-tabs>
+
+    <el-queue></el-queue>
   </div>
 </template>
 
 <script>
-import FilterTabs from './components/FilterTabs.vue'
+import ElQueue from './components/ElQueue.vue'
 
 export default {
   name: 'App',
   components: {
-    FilterTabs
+    ElQueue
   }
 }
 </script>
